@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="custom_edittext" parent="@android:style/Widget.EditText">
+		<item name="android:background">@drawable/edittextstyle</item>
+	</style>
+	<style name="custom_button" parent="@android:style/Widget.Button">
+		<item name="android:background">@drawable/buttonstyle</item>
+		<item name="android:textSize">14dip</item>
+	</style>
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.pwned.steamfriends"
+      android:installLocation="auto" android:versionName="2.9.1" android:versionCode="21">
+    <supports-screens
+    	android:smallScreens="true"
+    	android:normalScreens="true"
+    	android:largeScreens="true"
+    	android:anyDensity="true" />
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@style/steamfriends_theme" android:hardwareAccelerated="true">
+        
+        <activity class="SteamFriends" android:name="com.pwned.steamfriends.StartPage" android:label="@string/app_name" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.pwned.steamfriends.views.Selector" android:label="@string/app_name" android:clearTaskOnLaunch="true" class="Selector">  
+		 	<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            	<category android:name="android.intent.category.BROWSABLE" />
+            	<data android:scheme="steamfriends" />
+			</intent-filter> 
+		</activity>
+        <activity class="Friends" android:name="com.pwned.steamfriends.views.Friends" android:label="@string/app_name" android:clearTaskOnLaunch="true">  
+		 	<intent-filter>
+				<action android:name="android.intent.action.Main" />
+                <category android:name="android.intent.category.DEFAULT" />
+			</intent-filter> 
+		</activity> 
+		<activity class="Games" android:name="com.pwned.steamfriends.views.Games" android:label="@string/app_name" android:clearTaskOnLaunch="true">  
+		 	<intent-filter>
+				<action android:name="android.intent.action.Main" />
+                <category android:name="android.intent.category.DEFAULT" />
+			</intent-filter> 
+		</activity>
+		<activity android:name="com.pwned.steamfriends.views.Achievements" android:label="@string/app_name" android:clearTaskOnLaunch="true" class="Achievements">  
+		 	<intent-filter>
+				<action android:name="android.intent.action.Main" />
+                <category android:name="android.intent.category.DEFAULT" />
+			</intent-filter> 
+		</activity>
+		<activity class="Wishlist" android:name="com.pwned.steamfriends.views.Wishlist" android:label="@string/app_name" android:clearTaskOnLaunch="true">  
+		 	<intent-filter>
+				<action android:name="android.intent.action.Main" />
+                <category android:name="android.intent.category.DEFAULT" />
+			</intent-filter> 
+		</activity>
+		<activity class="Specials" android:name="com.pwned.steamfriends.views.Specials" android:label="@string/app_name_specials" android:clearTaskOnLaunch="true">  
+		 	<intent-filter>
+				<action android:name="android.intent.action.Main" />
+                <category android:name="android.intent.category.DEFAULT" />
+			</intent-filter> 
+		</activity>
+		<activity class="Groups" android:name="com.pwned.steamfriends.views.Groups" android:label="@string/app_name" android:clearTaskOnLaunch="true">  
+		 	<intent-filter>
+				<action android:name="android.intent.action.Main" />
+                <category android:name="android.intent.category.DEFAULT" />
+			</intent-filter> 
+		</activity>
+		<activity class="GroupActivity" android:name="com.pwned.steamfriends.views.GroupActivity" android:label="@string/app_name" android:clearTaskOnLaunch="true">  
+		 	<intent-filter>
+				<action android:name="android.intent.action.Main" />
+                <category android:name="android.intent.category.DEFAULT" />
+			</intent-filter> 
+		</activity>
+		<activity class="TwitterStream" android:name="com.pwned.steamfriends.views.TwitterStream" android:label="@string/app_name" android:clearTaskOnLaunch="true">  
+		 	<intent-filter>
+				<action android:name="android.intent.action.Main" />
+                <category android:name="android.intent.category.DEFAULT" />
+			</intent-filter> 
+		</activity>
+		<activity class="Settings" android:name="com.pwned.steamfriends.views.Settings" android:label="@string/app_name" android:clearTaskOnLaunch="true">  
+		 	<intent-filter>
+				<action android:name="android.intent.action.Main" />
+                <category android:name="android.intent.category.EDIT" />
+			</intent-filter> 
+		</activity>
+		    
+		<!--     
+		<receiver android:name="BootComplete">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+				<category android:name="android.intent.category.HOME" />
+			</intent-filter>
+		</receiver>
+		-->
+		<!-- Broadcast Receiver that will process AppWidget updates -->
+		<!-- Broadcast Receiver that will process AppWidget updates 
+        <receiver android:name=".SteamFriendsOnline">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_friendsonline" />
+        </receiver>        
+		 -->
+		<!-- <service android:name=".SteamFriendsOnline$UpdateService" /> -->
+		<service android:name="com.pwned.steamfriends.service.SteamService" class="SteamService" />
+		<service android:name="com.pwned.steamfriends.service.WishlistService" class="WishlistService" />
+		
+</application>
+    <uses-sdk android:minSdkVersion="4" android:targetSdkVersion="11" />
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+	<uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.DELETE_CACHE_FILES" />
+</manifest> 

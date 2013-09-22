@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+		<PreferenceCategory
+                android:title="Steam ID">
+        	<EditTextPreference
+        	        android:name="Change Steam ID"
+        	        android:summary="Change your Steam ID for Steam Friends"
+        	        android:defaultValue=""
+        	        android:title="Change Steam ID"
+        	        android:key="steamID" />
+        	        
+        </PreferenceCategory>
+        <PreferenceCategory
+                android:title="Register Banner">
+        	<EditTextPreference
+        	        android:name="Remove Red Register Banner"
+        	        android:summary="Enter the email address associated with your Pwned account"
+        	        android:defaultValue=""
+        	        android:title="Pwned Email Address"
+        	        android:key="pwnedEmail" />
+        	        
+        </PreferenceCategory>
+        <PreferenceCategory
+                android:title="Halp">
+	        	<Preference
+                	android:title="How can I find my Steam ID?"
+                	android:key="findSteamID" />
+                <Preference
+                	android:title="Can't see friends online?"
+                	android:summary="Can't see your friends online or achievements?"
+                	android:key="blankError" />
+        	 	<Preference
+                	android:title="Send Support E-Mail"
+                	android:summary="Having problems or want to suggest something? Send us an E-Mail!"
+                	android:key="supportEmail" />
+        	 	<Preference
+                	android:title="Clear Cache"
+                	android:summary="Clear the Steam Friends Cache"
+                	android:key="clearCache" />
+         </PreferenceCategory>
+         <PreferenceCategory
+                android:title="Notifications">
+                
+                <ListPreference
+           			android:title="Refresh Interval"
+           			android:summary="Notification Refresh Interval"
+           			android:key="refreshInterval"
+           			android:defaultValue="1800000"
+           			android:entries="@array/refresh"
+           			android:entryValues="@array/refresh_values" />  
+         </PreferenceCategory>   
+        <PreferenceCategory
+                android:title="Achievement Display Settings">
+                <CheckBoxPreference
+                        android:title="Achievements"
+                        android:defaultValue="true"
+                        android:summary="Show locked achievements for games"
+                        android:key="locked" />
+               
+        </PreferenceCategory>
+        <PreferenceCategory
+                android:title="Store Specials Settings">
+        	<EditTextPreference
+        	        android:name="Set Country Code"
+        	        android:summary="You can set the country code for your specials store. Usually a 2 character code."
+        	        android:defaultValue="US"
+        	        android:title="Set Country Code"
+        	        android:key="countryCode" />
+         </PreferenceCategory>
+         <!-- 
+         <PreferenceCategory
+                android:title="Wishlist Notification Settings">
+                <CheckBoxPreference
+                        android:title="Wishlist Notifications"
+                        android:defaultValue="true"
+                        android:summary="Get notifications on which game on your wishlist is on sale"
+                        android:key="wishserv" />
+               
+        </PreferenceCategory>
+         -->
+         <PreferenceCategory
+                android:title="Theme">
+                
+                <ListPreference
+           			android:title="Change Theme"
+           			android:summary="Change Display Theme"
+           			android:key="displayTheme"
+           			android:defaultValue="dark"
+           			android:entries="@array/themes"
+           			android:entryValues="@array/themes_values" />  
+         </PreferenceCategory>  
+         
+</PreferenceScreen>

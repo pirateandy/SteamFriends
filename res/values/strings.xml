@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Steam Friends</string>
+    <string name="app_name">Steam Friends</string>
+    <string name="app_name_specials">Steam Specials</string>
+    <string name="no_items">No Items Could Be Found :(</string>
+    <string name="main_no_items">No Friends Could Be Found :(</string>
+    <string name="games_no_items">No Games Could Be Found :(</string>
+    <string name="groups_no_items">No Groups Could Be Found :(</string>
+    <string name="groupsactivity_no_items">No Group Posts Could Be Found :(</string>
+    <string name="specials_no_items">No Specials Could Be Found :(</string>
+    <string name="wishlist_no_items">No Wishlist Could Be Found :(</string>
+    <string name="achievements_no_items">No Achievements Could Be Found :(</string>
+    <string name="mygames">My Games</string>
+    <string name="widgetfriends">Steam Friends Online</string>
+    <string name="widgetspecials">Steam Store Specials</string>
+    <string name="loadingwidget">Loading widget...</string>  
+        
+        
+    
+</resources>

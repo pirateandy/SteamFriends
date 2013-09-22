@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#232321"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="35dip"
+    android:background="@drawable/topgradient">
+    
+    <ImageView 
+   android:id="@+id/headerimage"
+   android:layout_gravity="center"
+   android:paddingTop="2dip"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:src="@+drawable/steamfriendsheader" 
+   />
+     
+    </LinearLayout>
+    
+    <Button android:id="@+id/supportsteamfriends"
+        android:layout_width="fill_parent"
+        android:layout_height="38dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:text="Support Steam Friends. Register on Pwned.com!"
+        android:textSize="13dip"
+        android:textColor="#f4f4f4"
+        android:textStyle="bold"
+        android:padding="0dip"
+        android:background="@drawable/pwned3"/>
+    
+   <ScrollView xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"> 
+	
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                android:gravity="center" 
+                android:id="@+id/relativerepeat" >
+	<ImageView 
+   	android:id="@+id/yourguysbtn"
+   	android:layout_gravity="center_vertical|center_horizontal"
+   	android:paddingTop="2dip"
+   	android:layout_width="wrap_content"
+   	android:layout_height="wrap_content"
+   	android:src="@+drawable/sf_friends_2_9_o" 
+   	/>
+   <ImageView 
+   android:id="@+id/friendguysbtn"
+   android:layout_gravity="center_vertical|center_horizontal"
+   android:paddingTop="2dip"
+   android:paddingLeft="65dip"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_toRightOf="@+id/yourguysbtn"
+   android:src="@+drawable/sf_games_2_9_o" 
+   />
+   <ImageView 
+   	android:id="@+id/specialsbtn"
+   	android:layout_gravity="center_vertical|center_horizontal"
+   	android:paddingTop="20dip"
+   	android:layout_width="wrap_content"
+   	android:layout_height="wrap_content"
+   	android:layout_below="@id/yourguysbtn"
+   	android:src="@+drawable/sf_specials_2_9_o" 
+   	/>
+   	
+   	<ImageView 
+   	android:id="@+id/wishlistbtn"
+   	android:layout_gravity="center_vertical|center_horizontal"
+   	android:paddingTop="20dip"
+   	android:paddingLeft="65dip"
+   	android:layout_width="wrap_content"
+   	android:layout_height="wrap_content"
+   	android:layout_below="@id/friendguysbtn"
+   	android:layout_toRightOf="@+id/specialsbtn"
+   	
+   	android:src="@+drawable/sf_wishlist_2_9_o" 
+   	/>
+   	
+   	<ImageView 
+   	android:id="@+id/twitterbtn"
+   	android:layout_gravity="center_vertical|center_horizontal"
+   	android:paddingTop="20dip"
+   	android:layout_width="wrap_content"
+   	android:layout_height="wrap_content"
+   	android:layout_below="@id/specialsbtn"
+   	android:src="@+drawable/sf_twitter_2_9_o" 
+   	/>
+   	
+   	
+   	<ImageView 
+   	android:id="@+id/groupsbtn"
+   	android:layout_gravity="center_vertical|center_horizontal"
+   	android:paddingTop="20dip"
+   	android:paddingLeft="65dip"
+   	android:layout_width="wrap_content"
+   	android:layout_height="wrap_content"
+   	android:layout_below="@+id/wishlistbtn"
+   	android:layout_toRightOf="@+id/twitterbtn"
+   	android:src="@+drawable/sf_groups_2_9_o" 
+   	/>
+   	
+   	<ImageView 
+   	android:id="@+id/settingsbtn"
+   	android:layout_gravity="center_vertical|center_horizontal"
+   	android:paddingTop="20dip"
+   	android:layout_width="wrap_content"
+   	android:layout_height="wrap_content"
+   	android:layout_below="@+id/twitterbtn"
+   	android:src="@+drawable/sf_settings_2_9_o"
+   	/>
+   	<!-- 
+   	<ImageView 
+   	android:id="@+id/chatbtn"
+   	android:layout_gravity="center_vertical|center_horizontal"
+   	android:paddingTop="20dip"
+   	android:paddingLeft="65dip"
+   	android:layout_width="wrap_content"
+   	android:layout_height="wrap_content"
+   	android:layout_below="@+id/groupsbtn"
+   	android:layout_toRightOf="@+id/settingsbtn"
+   	android:src="@+drawable/sf_chat_2_9_o"
+   	/>
+   	 -->
+   	
+   </RelativeLayout>
+   </ScrollView>
+   
+
+</LinearLayout>

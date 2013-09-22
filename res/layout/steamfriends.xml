@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#373737"
+    >
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="35dip"
+    android:background="@drawable/topgradient">
+    
+    <ImageView 
+   android:id="@+id/headerimage"
+   android:layout_gravity="center"
+   android:paddingTop="2dip"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:src="@+drawable/steamfriendsheader" 
+   />
+     
+    </LinearLayout>
+   
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                 >  
+
+<TextView
+android:id="@+id/hellotext"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:paddingTop="12dip" 
+android:paddingBottom="1dip"
+android:textStyle="bold"
+android:text="Steam Community Profile ID / Number"
+/>
+    
+ <EditText
+ 	android:id="@+id/steamid"
+    android:layout_height="wrap_content" 
+    android:layout_below="@+id/hellotext"
+    android:editable="true" android:autoText="true" android:bufferType="editable" android:fadingEdge="vertical" android:layout_marginTop="2dip" android:layout_width="fill_parent"/>
+
+<Button
+android:id="@+id/btnreset"
+android:layout_height="wrap_content"
+android:layout_below="@+id/steamid"
+android:text="Save Steam Profile ID" android:layout_gravity="center_horizontal" android:layout_width="fill_parent"/>
+
+<TextView
+android:id="@+id/disclaimer"
+android:text="To see your friends online, first you must make your profile PUBLIC and then you must either enter your Steam Community Profile ID or Profile NUMBER. This is NOT the Steam ID you use to login. This is the ID / Number for your profile on http://SteamCommunity.com . Help?! Click Here"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:textSize="12dip"
+android:layout_marginTop="5dip"
+android:layout_below="@+id/btnreset"
+android:layout_gravity="center_horizontal|bottom"
+/>
+
+<ImageView
+	android:id="@+id/bottomimage"
+	android:layout_alignParentBottom="true"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:src="@+drawable/fullguystrans"
+/>
+
+</RelativeLayout>
+
+</LinearLayout>
